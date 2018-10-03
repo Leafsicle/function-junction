@@ -67,7 +67,7 @@ function isVowel (letter) {
  * return the string "tothohisos isos fofunon".
  */
 
-// ...
+// let rovarspraket = (string) =>
 
 /**
  * Define a function reverse() that computes
@@ -76,7 +76,14 @@ function isVowel (letter) {
  * string "books".
  */
 
-// ...
+// take an input and break it into pieces
+// once the pieces are separated, reverse
+// once reversed put back together
+let reverse = drow =>
+	drow
+		.split('')
+		.reverse()
+		.join('')
 
 /**
  * Write a function findLongestWord() that takes an
@@ -148,7 +155,7 @@ test('reverse()', t => {
 
 test('findLongestWord()', t => {
   t.is(findLongestWord('book dogs'), 'book')
-  t.is(findLongestWord('everything'), 'life the universe and everything')
+  t.is(findLongestWord('life the universe and everything'), 'everything')
 })
 
 /* eslint-enable */
