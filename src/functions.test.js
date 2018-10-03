@@ -48,8 +48,6 @@ let sumOfArray = arr => arr.reduce((a, b) => a + b, 0)
  * and returns true if it is a vowel, false otherwise.
  */
 
-// ...
-
 /**
  * Write a function rovarspraket() that will translate
  * a text into a "rövarspråket". That is, double every
