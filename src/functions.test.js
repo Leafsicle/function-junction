@@ -3,7 +3,6 @@
  * and returns the largest of them. Use the if-then-else
  * construct available in Javascript.
  */
-
 let max = (a, b) => {
   if (a > b) {
     return a
@@ -11,12 +10,10 @@ let max = (a, b) => {
     return b
   }
 }
-
 /**
  * Define a function maxOfThree() that takes three
  * numbers as arguments and returns the largest of them.
  */
-
 let maxOfThree = (a, b, c) => {
   if (a > b && a > c) {
     return a
@@ -26,28 +23,41 @@ let maxOfThree = (a, b, c) => {
     return c
   }
 }
-
 /*
  * Define a function sum() that takes two numbers as
  * arguments and computes the sum of those two numbers.
  */
-
 let sum = (num1, num2) => {
   return num1 + num2
 }
-
 /*
  * Define a function sumOfArray that calculates the sum of
  * all the numbers in an array.
  */
-
 let sumOfArray = arr => arr.reduce((a, b) => a + b, 0)
-
 /**
  * Write a function isVowel() that takes a character (i.e. a string of length 1)
  * and returns true if it is a vowel, false otherwise.
  */
 
+function isVowel (letter) {
+  if (
+		letter == 'a' ||
+		letter == 'e' ||
+		letter == 'i' ||
+		letter == 'o' ||
+		letter == 'u' ||
+		letter == 'A' ||
+		letter == 'E' ||
+		letter == 'I' ||
+		letter == 'O' ||
+		letter == 'U'
+	) {
+    return true
+  } else {
+    return false
+  }
+}
 /**
  * Write a function rovarspraket() that will translate
  * a text into a "rövarspråket". That is, double every
