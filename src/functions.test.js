@@ -107,6 +107,13 @@ let reverse = drow =>
  * i.e. findLongestWord("book dogs") should return "book"
  */
 
+let findLongestWord = string => {
+  let longestWord = string.split(' ').reduce(function (longest, currentWord) {
+    return currentWord.length > longest.length ? currentWord : longest
+  }, '')
+  return longestWord
+}
+
 /**
  * NOTE: Don't modify anything below this line...
  */
