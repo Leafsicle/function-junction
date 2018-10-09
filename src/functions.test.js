@@ -67,7 +67,22 @@ function isVowel (letter) {
  * return the string "tothohisos isos fofunon".
  */
 
-// let rovarspraket = (string) =>
+function rovarspraket (word) {
+  if (isNaN(word)) {
+    let consonant = word.split('')
+    let vowel = ''
+    consonant.forEach(function (letter) {
+      if (~'aeiou'.indexOf(letter)) {
+        vowel += letter
+      } else {
+        vowel += letter + 'o' + letter
+      }
+    })
+    return vowel
+  } else {
+    return word.toString()
+  }
+}
 
 /**
  * Define a function reverse() that computes
@@ -91,8 +106,6 @@ let reverse = drow =>
  *
  * i.e. findLongestWord("book dogs") should return "book"
  */
-
-// ...
 
 /**
  * NOTE: Don't modify anything below this line...
